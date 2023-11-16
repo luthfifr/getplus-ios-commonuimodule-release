@@ -24,6 +24,15 @@ ios-commonUImodule-release
 ```
 The `CommonUI.podspec` should be the same as the one in [CommonUI repo](https://bitbucket.org/gpitech-getplus/ios-commonuimodule/src/develop/), which will be updated every time a new release tag created. Don't forget to veirfy the podspec by using `$pod spec lint` command.
 
+## Cocoapods Integration
+
+Because `CommonUI` is published as private repo in Cocoapods, please make sure that this repo is cloned to your local machine. It can be checked in the following directory:
+```
+Users/<you_macbook_username>/.cocoapods/repos/private-repo
+```
+
+To update your local Cocoapods repos, do `$pod install --repo-update` or `$pod repo update` command. Make sure the HEAD of CommonUI repo is in the latest version you created, in the log.
+
 ## Who do I talk to?
 
 - GPI Mobile Team
